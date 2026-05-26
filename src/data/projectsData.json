@@ -1,0 +1,22 @@
+[
+  { "id": 1, "name": "Nebula UI Kit", "shortDesc": "Librería de componentes con efecto Glassmorphism.", "date": "2026-06-15", "location": "Domo Alpha", "quadrant": "Sector Solar", "status": "ENTREGADO" },
+  { "id": 2, "name": "Apollo Hooks", "shortDesc": "Custom hooks para gravedad cero en React.", "date": "2026-07-20", "location": "Estación ISS-V2", "quadrant": "Órbita Terrestre", "status": "EN PROCESO" },
+  { "id": 3, "name": "Redux Supernova", "shortDesc": "Gestor de estado global de alta densidad.", "date": "2026-05-10", "location": "Base Copérnico", "quadrant": "Sector Solar", "status": "ENTREGADO" },
+  { "id": 4, "name": "Voyager API", "shortDesc": "Enrutador de datos para sondas lejanas.", "date": "2026-08-30", "location": "Refugio Helado", "quadrant": "Borde Exterior", "status": "CANCELADO" },
+  { "id": 5, "name": "Quasar Auth", "shortDesc": "Sistema de autenticación biométrica estelar.", "date": "2026-09-15", "location": "Ciudad Cúpula", "quadrant": "Joviano", "status": "EN PROCESO" },
+  { "id": 6, "name": "Meteor Data Sync", "shortDesc": "Sincronización de bases de datos en tiempo real.", "date": "2026-04-22", "location": "Pista Metano", "quadrant": "Saturniano", "status": "ENTREGADO" },
+  { "id": 7, "name": "Galactic Dashboard", "shortDesc": "Panel de telemetría y navegación SPA.", "date": "2026-10-05", "location": "Plataforma Flotante A", "quadrant": "Sector Solar", "status": "EN PROCESO" },
+  { "id": 8, "name": "Orbit Cache", "shortDesc": "Service workers para soporte offline extremo.", "date": "2026-11-20", "location": "Estadio Próxima", "quadrant": "Sistema Vecino", "status": "CANCELADO" },
+  { "id": 9, "name": "Stardust CLI", "shortDesc": "Herramienta de terminal para scaffolding.", "date": "2026-03-18", "location": "Club Ceres", "quadrant": "Cinturón Principal", "status": "ENTREGADO" },
+  { "id": 10, "name": "Pulsar Analytics", "shortDesc": "Rastreo de interacciones a velocidad luz.", "date": "2026-12-01", "location": "Domo Estelar", "quadrant": "Sistema Vecino", "status": "EN PROCESO" },
+  { "id": 11, "name": "Cosmic Router", "shortDesc": "Enrutamiento dinámico con code-splitting.", "date": "2026-02-14", "location": "Valle Verde", "quadrant": "Espacio Profundo", "status": "ENTREGADO" },
+  { "id": 12, "name": "Event Horizon", "shortDesc": "Librería para manejo de eventos asíncronos.", "date": "2027-01-15", "location": "Anillo C Lounge", "quadrant": "Saturniano", "status": "EN PROCESO" },
+  { "id": 13, "name": "Dark Matter CSS", "shortDesc": "Framework CSS minimalista y oscuro.", "date": "2026-01-30", "location": "Cráter Jezero", "quadrant": "Sector Solar", "status": "ENTREGADO" },
+  { "id": 14, "name": "Warp Speed Bundler", "shortDesc": "Empaquetador de módulos ultra rápido.", "date": "2026-08-01", "location": "Estación Minera", "quadrant": "Joviano", "status": "CANCELADO" },
+  { "id": 15, "name": "Astro Forms", "shortDesc": "Validación de formularios espaciales.", "date": "2026-05-25", "location": "Base Submarina", "quadrant": "Joviano", "status": "ENTREGADO" },
+  { "id": 16, "name": "Lunar DOM", "shortDesc": "Virtual DOM optimizado para baja gravedad.", "date": "2027-02-28", "location": "Anfiteatro Tycho", "quadrant": "Sector Solar", "status": "EN PROCESO" },
+  { "id": 17, "name": "Solar Flare UI", "shortDesc": "Sistema de diseño basado en radiación solar.", "date": "2026-11-11", "location": "Estación Orbital", "quadrant": "Joviano", "status": "CANCELADO" },
+  { "id": 18, "name": "Exoplanet Maps", "shortDesc": "Renderizado 3D de topografía alienígena.", "date": "2027-03-10", "location": "Cuevas de Hielo", "quadrant": "Saturniano", "status": "EN PROCESO" },
+  { "id": 19, "name": "Singularity DB", "shortDesc": "Base de datos NoSQL de densidad infinita.", "date": "2025-12-10", "location": "Géiser Arena", "quadrant": "Borde Exterior", "status": "ENTREGADO" },
+  { "id": 20, "name": "Gravity Fetch", "shortDesc": "Cliente HTTP con retries automáticos.", "date": "2027-04-05", "location": "Estadio Monumental", "quadrant": "Sector Solar", "status": "EN PROCESO" }
+]

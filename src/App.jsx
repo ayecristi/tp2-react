@@ -2,6 +2,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import DashboardHome from './views/DashboardHome';
 import ProfileView from './views/ProfileView';
+import ProjectLogbook from './views/ProjectLogbook';
+import ProjectsExplorer from './views/ProjectsExplorer';
+import SpaceGallery from './views/SpaceGallery';
+import SystemMap from './views/SystemMap';
+import NotFound from './views/NotFound';
 
 function App() {
     return (
@@ -9,12 +14,12 @@ function App() {
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<DashboardHome />} />
-                    <Route path="profile/:id" element={<ProfileView />} />
-                    <Route path="json-explorer" element={<h2>Módulo: Datos Locales (JSON)</h2>} />
-                    <Route path="api-explorer" element={<h2>Módulo: Integración API Externa</h2>} />
-                    <Route path="gallery" element={<h2>Galería Interactiva</h2>} />
-                    <Route path="logbook" element={<h2>Bitácora de Proyecto</h2>} />
-                    <Route path="*" element={<h2>Error 404: Página no encontrada</h2>} />
+                    <Route path="profile/:member" element={<ProfileView />} />
+                    <Route path="logbook" element={<ProjectLogbook />} />
+                    <Route path="projects" element={<ProjectsExplorer />} />
+                    <Route path="space-gallery" element={<SpaceGallery />} />
+                    <Route path="system-map" element={<SystemMap />} />
+                    <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>
         </BrowserRouter>
