@@ -143,6 +143,21 @@ const ParentLine = styled.div`
   flex-shrink: 0;
 `;
 
+// --- EL TRUCO DEFINITIVO PARA EL SCROLL (BLOQUE FANTASMA) ---
+const TreeWrapper = styled.div`
+  padding: 2rem 0;
+  display: inline-flex; /* Clave para que el contenedor respete las dimensiones completas */
+  min-width: max-content;
+
+  /* Pseudo-elemento que actúa como caja incompresible al final */
+  &::after {
+    content: '';
+    display: block;
+    width: 4rem; /* El espacio vacío que necesitamos a la derecha */
+    flex-shrink: 0; /* Prohíbe que el navegador lo aplaste */
+  }
+`;
+
 // --- COMPONENTE RECURSIVO ---
 
 const TreeNode = ({ node }) => {
@@ -183,9 +198,10 @@ export default function SystemMap() {
         </PageDescription>
       </HeaderSection>
       
-      <div style={{ padding: '2rem 0' }}>
+      {/* Reemplazamos el div con estilos en línea por nuestro nuevo Wrapper */}
+      <TreeWrapper>
         <TreeNode node={systemData} />
-      </div>
+      </TreeWrapper>
     </MapContainer>
   );
 }

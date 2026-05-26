@@ -35,7 +35,9 @@ const MainContent = styled.main`
     padding-bottom: 0; 
     
     /* Y le damos el margen izquierdo equivalente al ancho de tu Sidebar vertical (ej: 260px) */
-    margin-left: 260px; 
+    margin-left: 260px;
+    /* LA SOLUCIÓN MÁGICA: Le restamos exactamente el ancho de la Sidebar */
+    width: calc(100% - 260px); 
   }
 `;
 
