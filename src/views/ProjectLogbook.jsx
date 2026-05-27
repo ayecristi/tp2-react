@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { logbookData } from '../data/logbookData';
+import Header from '../components/Header/Header';
 
 // --- COMPONENTES ESTILIZADOS (CSS-in-JS) ---
 
@@ -14,24 +15,6 @@ const LogbookContainer = styled.div`
   @media (min-width: 1200px) {
     padding: 100px 2rem 80px 2rem;
   }
-`;
-
-const PageHeader = styled.header`
-  margin-bottom: 3rem;
-`;
-
-const PageTitle = styled.h1`
-  font-size: 3rem;
-  color: var(--primary);
-  text-shadow: 0 0 10px rgba(255, 177, 196, 0.3);
-  margin-bottom: 0.5rem;
-`;
-
-const PageDescription = styled.p`
-  color: var(--on-surface-variant);
-  max-width: 700px;
-  line-height: 1.6;
-  font-size: 1.1rem;
 `;
 
 const TimelineContainer = styled.section`
@@ -223,12 +206,10 @@ export default function ProjectLogbook() {
   return (
     <LogbookContainer>
       {/* Encabezado Semántico de la página */}
-      <PageHeader>
-        <PageTitle>BITÁCORA</PageTitle>
-        <PageDescription>
-          Registro cronológico de la gira espacial (proceso de desarrollo), decisiones y conflictos que nos llevaron hasta los lugares más remotos del universo.
-        </PageDescription>
-      </PageHeader>
+      <Header 
+      title="Bitácora del Proyecto"
+      description="Registro cronológico de la gira espacial (proceso de desarrollo), decisiones y conflictos que nos llevaron hasta los lugares más remotos del universo."
+      />
 
       {/* Estructura del Timeline */}
       <TimelineContainer>

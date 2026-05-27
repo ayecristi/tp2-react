@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { systemData } from '../data/systemData';
+import Header from '../components/Header/Header';
 
 // --- COMPONENTES ESTILIZADOS ---
 
@@ -24,27 +25,6 @@ const MapContainer = styled.div`
   @media (min-width: 900px) {
     padding: 60px 2rem;
   }
-`;
-
-const HeaderSection = styled.header`
-  margin-bottom: 3rem;
-  border-bottom: 1px solid var(--outline-variant);
-  padding-bottom: 2rem;
-  position: sticky;
-  left: 0;
-`;
-
-const PageTitle = styled.h1`
-  font-size: 2.5rem;
-  color: var(--tertiary);
-  text-shadow: 0 0 15px rgba(0, 220, 229, 0.4);
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-`;
-
-const PageDescription = styled.p`
-  color: var(--on-surface-variant);
-  font-size: 1.1rem;
 `;
 
 // --- ESTRUCTURA HORIZONTAL DEL ÁRBOL ---
@@ -191,12 +171,11 @@ const TreeNode = ({ node }) => {
 export default function SystemMap() {
   return (
     <MapContainer>
-      <HeaderSection>
-        <PageTitle>Telemetría de la Nave</PageTitle>
-        <PageDescription>
-          Mapa estructural en tiempo real de los componentes de React. Desplazate horizontalmente para explorar las conexiones.
-        </PageDescription>
-      </HeaderSection>
+      <Header
+      title="Telemetría de la Nave" 
+      description="Mapa estructural en tiempo real de los componentes de React. Desplazate horizontalmente para explorar las conexiones." 
+      variant="tertiary"
+      sticky />
       
       {/* Reemplazamos el div con estilos en línea por nuestro nuevo Wrapper */}
       <TreeWrapper>
