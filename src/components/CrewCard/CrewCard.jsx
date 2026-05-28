@@ -1,5 +1,17 @@
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+// Animación de entrada suave (fade-in + slide-up) para las tarjetas
+const slideUpFadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 const CardLink = styled(Link)`
   display: block;
@@ -7,6 +19,14 @@ const CardLink = styled(Link)`
   max-width: 400px;
   margin: 0 auto;
   text-decoration: none;
+  
+  /* Estado inicial antes del comienzo de la animación */
+  opacity: 0;
+  transform: translateY(30px);
+
+  /* Animación suave de carga stagger al ser visible en pantalla */
+  animation: ${({ $isVisible }) => $isVisible ? slideUpFadeIn : 'none'} 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: ${({ $delay }) => $delay || '0s'};
 `;
 
 const CardArticle = styled.article`
@@ -61,9 +81,9 @@ const NameLabel = styled.span`
   border-radius: 4px;
 `;
 
-export default function CrewCard({ memberId, imgSrc, altText, label }) {
+export default function CrewCard({ memberId, imgSrc, altText, label, $delay, $isVisible }) {
   return (
-    <CardLink to={`/profile/${memberId}`}>
+    <CardLink to={`/profile/${memberId}`} $delay={$delay} $isVisible={$isVisible}>
       <CardArticle>
         <CardImage src={imgSrc} alt={altText} />
         <NameContainer>
