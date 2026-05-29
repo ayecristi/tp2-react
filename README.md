@@ -7,7 +7,7 @@
 [![Axios](https://img.shields.io/badge/Axios-1.x-5A29E4?logo=axios&logoColor=white)](https://axios-http.com/)
 [![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com/)
 
-> 🔗 **[Ver el proyecto desplegado en Vercel](COMPLETAR_LINK_VERCEL)**
+> 🔗 **[Ver el proyecto desplegado en Vercel](https://tp-react-grupal.vercel.app/)**
 
 ---
 
@@ -194,6 +194,8 @@ Barras visuales con `keyframes` de styled-components que se sincronizan con el e
 ### Capturas de Pantalla
 
 ![Dashboard Home](./docs/tp/screenshot_dashboard.png)
+
+![Dashboard Cards](./docs/tp/screenshot_dashboard_cards.png)
 
 ![Perfil Individual](./docs/tp/screenshot_profile.png)
 
