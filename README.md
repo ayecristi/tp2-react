@@ -207,7 +207,7 @@ Barras visuales con `keyframes` de styled-components que se sincronizan con el e
 
 ## 🔗 Enlace al Proyecto Desplegado
 
-> **[COMPLETAR_LINK_VERCEL](COMPLETAR_LINK_VERCEL)**
+> **[https://tp-react-grupal.vercel.app/](https://tp-react-grupal.vercel.app/)**
 
 ---
 
