@@ -5,8 +5,7 @@
 * **Formato de entrega:** Deberán publicar en la pestaña “Entrega TP2”, los siguientes links:
   * **Link al repositorio**, donde el docente revisará la carpeta de archivos y el read.me
   * **Link a la web publicada en Vercel**.
-  * **Google Doc**: `https://docs.google.com/spreadsheets/d/19MkDTlzFpyaHIS9pCcaL5mHWc4qf-1ZCs9R8dRhG9
-ME/edit?gid=2050921425#gid=2050921425`
+  * **Google Doc**: `https://docs.google.com/spreadsheets/d/19MkDTlzFpyaHIS9pCcaL5mHWc4qf-1ZCs9R8dRhG9ME/edit?gid=2050921425#gid=2050921425`
 
 > ⚠️ IMPORTANTE: los TP1 y TP2 deben ser repositorios independientes. 
 
